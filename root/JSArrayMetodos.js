@@ -2,7 +2,7 @@
 //El metodo de JS toString() convierte una matriz en una cadena de valores de Array(separados por coma. )
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 document.getElementById("demo").innerHTML = fruits.toString();
-
+//prespuesto 20205
 //Join() metodo tambien une todos los elementos de la matriz en una cadena. Con la diferencia de que puedes indicar el separador.
 const fruits2 = ["Banana", "Orange", "Apple", "Mango"];
 document.getElementById("demo").innerHTML = fruits.join(" * ");
