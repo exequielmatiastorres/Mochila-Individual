@@ -1,21 +1,16 @@
-body {
-    background-color:thistle;
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-ul li{
-    list-style-type: none;
-    
-}
 
-h1 {
-    color: rgb(221, 0, 255);
-}
+.parte1 {
+    background-color: blue;
+    width: 300px;
+    height: 300px;
 
-table th, td {
-    padding: 15px;
-    border: 2px solid blueviolet;
 }
-
+ 
 
 /*
 
