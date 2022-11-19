@@ -1,0 +1,237 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    width: 1920px;
+}
+
+body {
+    width: 100%;
+}
+
+
+
+
+
+
+
+.titulo1 {
+    background-color: blue;
+    width: 255px;
+    height: 255px;
+    display: inline-block;
+}
+.titulo2 {
+    background-color: forestgreen;
+    width: 255px;
+    height: 255px;
+    display: inline-block;
+}
+
+.titulo3 {
+    background-color: darkorange;
+    width: 255px;
+    height: 255px;
+    display: inline-block;
+}
+
+.titulo4 {
+    background-color: violet;
+    width: 255px;
+    height: 255px;
+    display: inline-block;
+}
+
+.titulo5 {
+    background-color: indigo;
+    width: 255px;
+    height: 255px; 
+    display: inline-block;
+}
+
+.pa {
+    width: 100%;
+    background-image: url(/codigos-octubre-c6/Practica_PG_y_Individual/img/bowl-and-pet-daities-on-green-background\ 1.png);
+    height: 700px;
+    position: relative;
+}
+
+.pa1 {
+    background-color: black;
+    display: inline;
+    width: 40px;
+    color: antiquewhite;
+}
+
+.pa2 {
+    background-color: crimson;
+    display: block; 
+    width: 90px;
+    text-align: end;
+}
+
+.pa3 {
+    background-color: crimson;
+    display: block; 
+    width: 90px;
+    text-align: end;
+}
+
+.pa4 {
+    width: 234px;
+}
+
+.pa12 {
+    position: absolute;
+    bottom: 20px;
+    left: 70%;    
+}
+
+
+
+
+
+
+
+
+/*
+
+tenemos displat, position, contenedor flexible 
+
+Selector {
+    propiedad: valor;
+}
+1_selector al que se le aplicara el estilo
+2_propiedad: caracteristica visual que deseamos manipular
+3_valor: valor que queremos manipular
+4_propiedad + valor = declaracion css
+
+
+Selectores de clase
+. (clase)
+
+selectores combinados
+h2.subtitulo {}
+
+selector de etiqueta (aplica estilo a cualquier etiqueta de html que coindica con el selector de etiqueta)
+*etiqueta del html*
+
+selectores descendentes 
+
+ul li {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROPIEDADES CSS PROPIEDADES CSS PROPIEDADES CSS PROPIEDADES CSS PROPIEDADES CSS PROPIEDADES
+background-color:  modifica el color de fondo de la caja en la que se encuentra el elemento
+background-image: url(); indica una imagen de fondo
+background-repeat: repeat o no repeat; (forma exclusiva para controlar el comportamiento de la imagen de fondo especificamente)
+background-repeat: repeat-y; (repite segun el eje)
+background-repeat: repeat-x; (repite segun el eje)
+background-position: center bottom; (recibe 2 valores, el 1ro representa la posicion deseada en el eje x y el 2do la posicion deseada en el eje y)
+background-attachment: scroll o fixed; (controlar el comportamiento de la imagen de fondo)
+background-size: contain o cover; (nos permite controlar el comportamiento de la imagen de fondo, en este caso el tamaño de la misma) (contain ocupado todo el ancho o todo el alto del area del elemento al que se le aplico la imagen de fondo, cover podemos hacer que la imagen ocupe todo el area visual del elemento al que se le aplico esta iamgen de fondo)
+font-family: permitir elegir la familia tipografica que queremos usar.
+font-size: tamaño tipografico
+font-weight: define el peso de la tipografia
+font-style: define el estilo de la tipografia
+color: modifica el color de la letra
+text-align: para modificar la posicion en la que se encuentra el texto
+text-decoration: permite elegir una decoracion para el texto.
+line-height: permite definir el alto de cada linea de textos.
+display: permite valores como block, inline e inline-block.
+inline-block: permite converti un elemento de bloque a un elemento de linea pero con la posibildiad de implementar propiedades adicionales que solo pueden ser aplicadas a elementos de bloque.
+
+
+position: relative; (nos permite el desplazamiento de caja de su posicion original a una nueva posicion. para manipular su nueva ubicacion lo haremos con las propiedades: top, rigth, bottom y left) NO ALTERA LA POSICION DEL RESTO DE LOS ELEMENTOS HTML
+
+position: absolute; (se desplazara horizontal y verticalmente tomando como referencia los costados del body segun como se especifiquen las propiedades)
+
+position relative + position absolute
+Si nuestras cajas (hijas) están dentro de otra caja (padre), el punto de referencia
+seguirá siendo el body a menos que hagamos relativa la posición de su
+padre.
+
+div { position: relative }
+.caja-2 {
+ position: absolute;
+ right: 100px;
+ top: 50px;
+}
+
+
+.nav-bar {
+  position:fixed;
+  top:5px;
+  width:100%;
+}
+
+
+
+
+
+
+
+ACTIVIDAD
+¿Sabías qué?
+Mientras que si se utilizan fuentes de terceros, como Google o Adobe Fonts, solo estamos incluyendo las fuentes mediante la vinculación a un activo externo.
+
+Alojar fuentes localmente significa que tenemos los archivos de fuentes en nuestro propio servidor. Para ello vamos a hacer uso de la directiva css @font-face.
+
+La regla @font-face permite cargar fuentes personalizadas en una página web. Una vez que se agrega a una hoja de estilo, la regla indica al navegador que descargue la fuente desde donde está alojada y luego la muestre como se especifica en el CSS.
+
+¿Te animás a investigarlo para la clase?
+
+1_Incluimos el enlace a nuestros iconos dentro del <head> del HTML:
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+contenedor flexible
+nos permite mover horizontal, verticalmente o combinados
+
+jsutify-content maneja el main axis
+
+align-items maneja el cross axis
+
+display: flex;
+justify-content:
+align-item:
+flex-direction: quien es el main axis y quien es el cross axis
+
+
+display: flex;
+justify-content: siguientes valores.
+flex-start: Alinea elementos al lado izquierdo del contenedor.
+flex-end: Alinea elementos al lado derecho del contenedor.
+center: Alinea elementos en el centro del contenedor.
+space-between: Muestra elementos con la misma distancia entre ellos.
+space-around: Muestra elementos con la misma separación alrededor de ellos.
+
+
+align-items: siguientes valores.
+flex-start: Alinea elementos a la parte superior del contenedor.
+flex-end: Alinea elementos a la parte inferior del contenedor.
+center: Alinea elementos en el centro (verticalmente hablando) del contenedor.
+baseline: Muestra elementos en la línea base del contenedor
+stretch: Elementos se estiran para ajustarse al contenedor.
+
+
+z-index: indica cual caja se mostrara primero. Recibe un valor numerico que especifica el numero de orden en el que vamos a apilar los elementos.
+a mayor valor, mas arriba se representara el elemento. 
+z-index funciona unicamente con elementos que tengan un valor de position.(absoluta-relativa-fija, con statica permanece sin funcionar)
+sintaxis: z-index: 10;
+*/
