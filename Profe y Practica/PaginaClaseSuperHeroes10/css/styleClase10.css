@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.parte1 {
+    width: 100%;
+    background-color: #00669F;
+    height: 50px;
+}
+
+.titu1 {
+    width:128px;
+    height: 101px;
+}
+
+.item1 {
+    width: 300px;
+    height: 529px;
+}
+
+.corazon {
+    position: absolute;
+    top: 1;
+    left: 10px;
+}
+
+
+.batman {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 60px;
+}
+
+.circulito {
+    border-radius: 100%;
+}
+
+.titulo2 {
+    text-align: center;
+}
+
+
+
+
+.botonF {
+    width: 128.78px;
+    height: 48.52px;
+    background-color: #00669F;
+    text-align: center;
+}
+
+.boton {
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+.pie {
+    width: 100%;
+    height: 50px;
+    background-color: #00669F;
+}

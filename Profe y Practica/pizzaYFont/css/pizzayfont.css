@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+
+.caaja1 {
+    display: flex;
+    justify-content: flex-start;
+    width:100%;
+    height: 100px;
+    background-color: #222222;
+}
+
+.imagenPrincipal {
+    height: 100px;
+    width: 200px;
+}
+
+.lista1 {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    list-style-type: none;
+    align-items: center;
+}
+
+.iteml1 {
+    margin: 10px;
+}
+
+.fotofoto {
+    
+}
+
+.imagen21 {
+    width: 490px;
+    height: 350px;
+}
+
+.moto {
+    display: inline-block;
+    width: 100%;
+    
+}
+
+.cartel2 {
+    display: inline-block;
+    width: 491px;
+    height: 350px;
+}
+
+.tituPodio {
+    color:#FC200C;
+    position: inline-block;
+    text-align: center;
+    font-size: 24px;
+
+}
+
+.item5 li {
+    display: block;
+    margin: 20px;
+    list-style:decimal
+}
+
+.imagen {
+    height: 491px;
+    width: 350px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+
+
+.titRd {
+    color:#FC200C;
+}
+
+.tituMoto {
+    position: absolute;
+    text-align: center;
+    background-color: blue;
+}
+
+
+.cartel2 {
+    height: 350px;
+    width: 491px;
+    border-radius: 5px;
+    background-color: aqua;
+}
+
+.podio {
+    width: 491px;
+    height: 350px;
+    background-color: #FFFFFF;
+}
+
+.podio ol li {
+    display: inline-block;
+}
+
+.pie {
+    background-color: #222222;
+    color: white;
+
+}
+
+.listpie {
+    height: 100px;
+    list-style-type: none;
+    display: inline;
+    
+}
+
+.footerlist {
+    line-height: 30px;
+    margin-left: 15px;
+}
+
+.logpie {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+}
+
+.piepie {
+    height: 130px;
+    background-color: #222222;
+    color: white;   
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.imagenPie {
+    height: 50px;
+    width: 200px;
+   
+}
+
+/*.practica1 {
+    background-color: red;
+    
+    
+}
+
+.practica {
+    
+    background-color: blue;
+    display:inline-block;
+    width: 100%;
+    text-align: end;
+}
+
+.caaja {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}*/
+
