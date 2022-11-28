@@ -1,0 +1,352 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*HEADER*/
+
+.flex {
+    height: 174px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barraNavHeader {
+    width: 80vh;
+}
+
+.Header {
+    background-color:#F5F5F5;
+}
+
+.barraNavHeader li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.botonContacto {
+    width: 134px;
+    height: 44px;
+    background-color:#8B48BF;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+/*MAIN O SECCION PRINCIPAL*/
+
+.contenedorMain1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.contentMain {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.tituloMain {
+    width: 450px;
+    height: 228px;
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: #232C50;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.botonMain {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    width: 134px;
+    height: 44px;
+    background: #8B48BF;
+    border-radius: 50px;
+}
+/*CONTENIDO SECUNDARIO*/
+.contenidoSecundario {
+    background-color: #8B48BF;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tituloCS {
+    width: 450px;
+    height: 88px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 114.6%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.parrafoCS {
+    width: 450px;
+    height: 88px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 151.1%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+/*LISTA ORDENADAA CON CONTENIDO*/
+
+.contenidoDeListas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.contenidoConNumeros {
+    width: 30vw;
+}
+
+.flex11 {
+    display: flex;
+}
+
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 70px;
+    height: 40px;
+    background-color:#8B48BF;
+    color: #FFFFFF;
+}
+
+.tituloConNumero {
+    width: 246px;
+    height: 43px;
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    color: #323851;
+}
+
+.contenidoDeTitulo {
+    width: 437px;
+    height: 104px;
+    padding-left: 90px;
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+    margin-top: 10px;
+    color: #B3B2B7;
+}
+
+/*LISTA DE CAMPEONES*/
+
+.tituloCampeones {
+    width: 100vw;
+    height: 60px;
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    color: #242E53;
+    text-align: center;
+    margin: 30px 0px 30px 0px;
+}
+
+.cajaPadreCampeones {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.cajaCampeones {
+    position: relative;
+    width: 445px;
+    height: 220px;
+    background-color:  #FAFAFA;
+}
+
+.cajaLogoCampeon {
+    text-align: center;
+    position: relative;
+    bottom: 30px;
+}
+
+.nombreCampeon {
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    color: #3F4868;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.parrafoCampeones {
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #B9B9C1;
+}
+
+.cajaNavarro {
+    margin-right: 80px;
+}
+
+.cajaSanyo {
+    margin-left: 80px;
+}
+
+.botonMorePadre {
+    margin-top: 30px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.botonMore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 134px;
+    height: 44px;
+    background: #8B48BF;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/*CAJA VIOLETA ANTES DEL FOOTER*/
+
+.bannerVioletaPadre {
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    background: #8B48BF;
+}
+
+
+.tituloB {
+    width: 50vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FFFFFF; 
+    line-height: 50px;
+}
+
+.segundaCaja {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text] {  
+    padding-left: 30px;
+    width: 310px;
+    height: 60px;
+    font-size: 20px;
+    background: #FFFFFF;
+    border-radius: 50px;
+} 
+
+/*FOOTER*/
+
+.pie {
+    background-color: #1E1E26;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 247px;
+}
+
+.poio {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.listapie {
+    width: 80px;
+    font-size: 40px;
+}
+
+.listapie li {
+    list-style-type: none;
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.botonPie {
+    width: 80px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: #8B48BF;
+    color: #FFFFFF;
+}
+
+.parrafoPies {
+    color: #8C8C94;
+    display: flex;
+}
+
+.pieFinal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen 

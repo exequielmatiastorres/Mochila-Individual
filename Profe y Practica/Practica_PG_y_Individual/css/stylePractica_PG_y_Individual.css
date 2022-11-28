@@ -8,90 +8,53 @@ body {
     width: 100%;
 }
 
-
-
-
-
-
-
-.titulo1 {
-    background-color: blue;
-    width: 255px;
-    height: 255px;
-    display: inline-block;
-}
-.titulo2 {
-    background-color: forestgreen;
-    width: 255px;
-    height: 255px;
-    display: inline-block;
+.titulo001 {
+    display: flex;
 }
 
-.titulo3 {
-    background-color: darkorange;
-    width: 255px;
-    height: 255px;
-    display: inline-block;
+.number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    width: 70px;
+    height: 40px;
+    background-color:#8B48BF;
+    color: #FFFFFF;
 }
 
-.titulo4 {
-    background-color: violet;
-    width: 255px;
-    height: 255px;
-    display: inline-block;
+.tituloConNumero {
+    width:246px;
+    height: 43px;
+
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    color: #323851;
 }
 
-.titulo5 {
-    background-color: indigo;
-    width: 255px;
-    height: 255px; 
-    display: inline-block;
+.contenidoDeTitulo {
+    width: 437px;
+    height: 104px;
+
+    font-family: 'Be Vietnam';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16.2984px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.01em;
+
+    color: #B3B2B7;
 }
-
-.pa {
-    width: 100%;
-    background-image: url(/codigos-octubre-c6/Practica_PG_y_Individual/img/bowl-and-pet-daities-on-green-background\ 1.png);
-    height: 700px;
-    position: relative;
-}
-
-.pa1 {
-    background-color: black;
-    display: inline;
-    width: 40px;
-    color: antiquewhite;
-}
-
-.pa2 {
-    background-color: crimson;
-    display: block; 
-    width: 90px;
-    text-align: end;
-}
-
-.pa3 {
-    background-color: crimson;
-    display: block; 
-    width: 90px;
-    text-align: end;
-}
-
-.pa4 {
-    width: 234px;
-}
-
-.pa12 {
-    position: absolute;
-    bottom: 20px;
-    left: 70%;    
-}
-
-
-
-
-
-
-
 
 /*
 
