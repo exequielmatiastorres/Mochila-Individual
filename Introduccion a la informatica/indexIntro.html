@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduccion a la Informatica</title>
+    <link rel="stylesheet" href="./css/stylesIntro.css">
+</head>
+<body>
+    <!--Hardware y software:
+    Las computadoras deben su funcionamiento a esos dos elementos básicos. El hardware es la parte fisica como por ejemplo: placa de video, memorias, teclados, todo componente tangible que utilizamos para interactuar con nuestro ordenador. El segundo, proporciona las instrucciones necesarias para realizar una determinada función, como, por ejemplo, los sistemas operativos, los juegos, programas de usuario y demás. Como vemos, tanto el hardware como el software dependen el uno del otro para poder existir.
+
+    Una computadora Recibe datos, los procesa y muestra los resultados los cuales pueden ser:
+    *Almacenados
+    *Transmitidos
+    *Impresos
+    
+    Buses de datos: medios mediante los cuales se conectan los diferentes componentes a traves de pulsos electricos, estos pulsos electricos son interpretados como 0 y 1.
+
+    Unidad central de proceso: la cpu realiza millones de operaciones por segundo, esta recibe los impulsos electricos es decir 0 y 1.
+
+    Memoria RAM:Busca intrucciones para indicarle al CPU que realizar, esas intrucciones suelen ser:
+    *El boton sobre el que hicimos clic
+    *El programa que contiene ese boton
+    *Lo que sucede luego de hacer clic con el boton
+    *Encontrar la instruccion para pausar el video
+    *Mostrara el resultado en el monitor nuevamente con 0 y 1.
+
+
+
+    Esquema general:
+    Placa Madre: Es la placa principal donde se conectan los demas componentes de manera directa (como los circuitos eléctronicos interconetados) y los que se conectan de manera indirecta (a través de puertos USB u otro tipo de conectores)
+
+    Procesador o CPU: su función es interpretar y ejecutar las instrucciones a través de operaciones básicas: aritméticas y lógicas. Es quien “dirige” las operaciones que realiza la computadora.
+
+    Disco rigido:Almacena datos de manera permanente. Es información que la computadora no necesita de manera inmediata para su funcionamiento. Puede almacenar archivos de todo tipo como documentos, imágenes, videos, audios, etc.
+
+    Memoria ROM:La memoria ROM, por otra parte, almacena información de manera permanente. Guarda todo lo relacionado a la configuración inicial para el arranque de la máquina y funcionamiento básico
+
+    Memoria RAM:La memoria RAM es el componentes que almacena información de manera temporal. (En la memoria de acceso aleatorio se cargan todas las instrucciones que ejecuta la CPU y otras unidades del computador, además de contener los datos que manipulan los distintos programas.)
+
+    Tarjeta de Sonido:La placa de sonido permite que la computadora reproducir sonidos a través de auriculares o parlantes. También permite recibir sonidos a través de micrófonos.
+
+    Tarjeta de Video:La placa de video o tarjeta gráfica, es la encargada de mostrar imágenes en el monitor. Hace referencia al conjunto formado por la GPU (Graphic Processing Unit), los módulos de memoria, su disipador, salidas de video, etc. (Una unidad de procesamiento gráfico es un coprocesador dedicado al procesamiento de gráficos para aligerar la carga de trabajo del procesador central en aplicaciones, como los videojuegos o aplicaciones 3D interactivas)
+
+    Fuente de Alimentación: La fuente de alimentación de una computadora convierte la energía del
+    tomacorriente en el tipo de energía que necesita la computadora.
+
+    Dispositivos de entrada, de salida y mixtos:
+
+    Se llaman así a todos aquellos dispositivos que se conectan a la CPU o unidad central de procesamiento, para añadir funciones u operaciones a la computadora, pero que no forman parte permanente de esta.
+
+
+    Puente Norte: Es el chip que controla las funciones de acceso desde y hasta el CPU, PCI-Express, memoria RAM, vídeo integrado (dependiendo de la placa) y el puente sur.
+
+    Puente Sur: Es un chip que se encarga de coordinar los diferentes dispositivos de entrada y salida y algunas otras funcionalidades de baja velocidad. No está conectado a la CPU y se comunica con ella indirectamente a través del puente norte.
+
+    ¿A que velocidad se ejecutan los procesos?
+    Los que determinan la velocidad de los procesos son los siguientes componentes:
+    *Frecuencia (es la velocidad de trabajo, se expresa en Ghz)
+    *Núcleos (permite ejecutar tareas paralelamente)
+    *Subprocesos o hilos (procesos que se pueden ejecutar al mismo tiempo)
+    *Memoria Caché (almacena temporalmente un conjunto de instrucciones que estan en una memoria interna del procesador)
+
+    *Nucleos: Los nucleos son como un subprocesador en sí mismo.
+    Una CPU con dos núcleos (dual core) sí que podría realizar dos tareas al mismo tiempo, uno de cuatro (quad core), pues cuatro, y así de forma correlativa con tantos núcleos como incorpore.
+    
+    Hilos o Threads de un CPU:Los hilos son el flujo de control de programa.
+    Ayudan de forma directa a la manera en la que un procesador administra sus tareas.
+    Su función es que los “tiempos de espera” entre procesos se aprovechen mejor.
+    Los hilos pueden hacer creer al usuario que sí se puede hacer más de una cosa al mismo tiempo dividiendo la tarea en porciones, de modo que se alternan porciones de tareas para que parezca que se ejecutan al mismo tiempo.
+
+    Memoria caché de un CPU:La memoria caché es la memoria más rápida del sistema y se utiliza para acelerar el acceso a memoria de nuestro procesador. Almacena los datos e instrucciones más utilizados por el sistema para evitar perder tiempo y tener que acceder a ellos en la RAM.
+
+    Frecuencia de un CPU
+    El procesador está gobernado por un reloj que
+    sincroniza sus componentes y limita las
+    operaciones que es capaz de realizar en una
+    determinada cantidad de tiempo.
+    La frecuencia es el número de cambios que se
+    hace en un determinado segundo.
+
+    La frecuencia no lo es todo
+    Hay parámetros más importantes para medir el rendimiento de un
+    procesador en funcionamiento. Aquel al que se le suele dar una mayor
+    importancia es el IPC o Instrucciones Por Ciclo. 
+
+    Mientras que una CPU con una
+    velocidad de reloj más rápida puede
+    completar más ciclos en un segundo,
+    una CPU con un IPC más alto, pero con
+    una frecuencia más baja, puede ser
+    capaz de completar más tareas en un
+    segundo. 
+
+    Arquitectura de Von Neuman:
+    El procesador es un dispositivo que necesita comunicarse con muchos otros elementos. Lee datos e instrucciones de la memoria RAM, requiere información desde periféricos de entrada y se comunica con periféricos de salida para mostrar los resultados.
+
+    El modelo o arquitectura de Von
+    Neumann es un modelo conceptual
+    que muestra cómo funciona una
+    computadora. Está basado en el
+    desarrollado por el físico y
+    matemático John Von Neumann
+
+
+
+    PCH:(chipset)
+
+
+
+    Arquitectura Von Neuman:
+    CPU (central processing unit) o unidad central de procesamiento.
+    Esta, a su vez, contiene:
+    * Una ALU (arithmetic logic unit)
+    * unidad aritmético lógica y
+    Registros del procesador.
+    * Una unidad de control y un
+    contador de programa.
+    Tiene una memoria principal y accede a mecanismos de entrada y salida.
+
+    CPU o unidad central de procesamiento
+    Es la encargada de interpretar y procesar las instrucciones recibidas
+    de un programa. La CPU contiene a la ALU, la unidad de control y un
+    conjunto de registros
+    ● La ALU o unidad aritmético lógica solo realiza operaciones
+    aritméticas y lógicas sobre los datos. Realiza los cálculos de suma,
+    resta, multiplicación, división y resta, pero también puede realizar
+    operaciones lógicas del tipo AND, OR o NOT.
+    ● La unidad de control controla el funcionamiento de la ALU, la
+    memoria y los dispositivos de entrada y salida de la computadora.
+    Gestionará el proceso de mover los datos y programa desde y hacia
+    la memoria y de ejecutar las instrucciones del programa.
+
+    CPU o unidad central de procesamiento (cont.)
+        ● Los registros son áreas de almacenamiento de alta velocidad en la CPU,
+        todos los datos deben almacenarse en un registro antes de poder
+        procesarse.
+        ○ El registro de datos de memoria contiene los datos
+        que se transfieren a la memoria.
+        ○ El registro de direcciones de memoria contiene la ubicación en la
+        memoria, de los datos a los que debe acceder.
+        ○ El contador de programa o program counter es quien
+        calcula la cantidad de ciclos de ejecución y apunta a la
+        próxima instrucción en ser ejecutada.
+
+
+
+    ¿Cómo funciona?
+        Funciona utilizando el llamado “Ciclo de la
+        máquina”, usando cuatro simples pasos:
+        buscar, decodificar, ejecutar, almacenar.
+        Las instrucciones son obtenidas por la CPU
+        desde la memoria. La CPU luego decodifica
+        y ejecuta estas instrucciones. El resultado
+        es almacenado de nuevo en la memoria
+        luego que se complete el ciclo de ejecución
+        de las instrucciones.
+    
+        
+        8 bits
+        1 byte
+        
+        1 Kilobyte
+        1024 bytes
+        
+        1 megabyte 
+        1024 KBytes
+        
+        1 gigabyte
+        1024MB  
+
+        1 terabyte
+        1024GB
+        
+        1 petabyte 
+        1024TB
+        
+        1 exabyte
+        1024PB
+        
+        1 zetabyte
+        1024EB
+
+        1 yottabyte
+        1024ZB
+        
+        1 brontobyte
+        1024YB
+        
+        1 geopbyte
+        1024BB
+    
+
+    Introduccion a las memorias.
+    Memoria principal: velocidad sobre almacentamiento.
+    Memorias Secundaria: capacidad de almacentamiento.
+
+
+    ¿Cómo puede acceder 
+    la CPU a la memoria RAM?
+    La CPU puede acceder a la memoria RAM a través del Single channel o Dual Channel.
+
+    Para el acceso a la información en la RAM se utiliza una única señal a un ancho de banda y frecuencia determinada.
+
+    Permite el acceso simultáneo a dos módulos de memoria. Para ello, todos los módulos de memoria deben tener la misma capacidad, velocidad, frecuencia, latencia y fabricante.
+
+
+    Velocidad   
+    Es el tiempo que tarda la RAM en recibir una solicitud del procesador y acceder a la información. La velocidad de una memoria está medida en megahertz (Mhz) o millones de ciclos por segundo.
+
+    Latencia: Es la cantidad de ciclos de reloj que transcurren entre una petición y su respuesta.
+
+
+
+
+    Tipos de sistemas numéricos:
+
+    Dentro del sistema numérico se pueden hacer dos grandes divisiones:
+    Sistema numérico no posicional: Son aquellos en los cuales el valor de
+    los símbolos que componen el sistema
+    es fijo, no depende de la posición —por
+    ejemplo, el sistema romano—.
+
+    Sistema numérico posicional:Son aquellos que el valor del símbolo
+    depende del valor que se les ha
+    asignado y de la posición que ocupa el
+    símbolo.
+
+    Base y dígito
+    Definimos como base del sistema de numeración a la cantidad de dígitos que lo
+    conforman.
+    Ejemplo: Este sistema está formado por diez símbolos, los dígitos del 0 al 9.
+    Por lo tanto, estaremos frente a una base 10.
+    Una vez agotada la cantidad de dígitos que forman al sistema de numeración,
+    las cantidades mayores a la base se obtienen combinando en forma adecuada
+    los diferentes dígitos del sistema. Esto hace que cada uno de los dígitos adopte
+    distintos valores según la posición que ocupe. 
+
+    Registros de la CPU
+    Un registro es una memoria de muy alta velocidad,
+    que se utiliza en los procesadores para acceder a
+    información importante de manera rápida.
+    La CPU tiene 5 registros internos.
+    1. PC: Program counter
+    2. IR: Instructions register
+    3. MAR: Memory address register
+    4. MDR: Memory data register
+    5. Accumulator
+
+    Caché de la CPU
+    Es un apoyo importante para el procesador que
+    se divide en un total de tres niveles generales al
+    que podemos sumar un cuarto que no resulta
+    nada común.
+    La diferenciación entre memoria caché L1, L2 y
+    L3 (también existe L4) obedece a un orden de
+    jerarquía establecido por cercanía al
+    procesador, velocidad y capacidad.
+
+    V (video) RAM
+    Es la memoria RAM optimizada para
+    adaptadores de vídeo. Tienen dos
+    puertos para que los datos de vídeo
+    puedan escribirse al mismo tiempo.
+    El adaptador de vídeo lee
+    regularmente la memoria para
+    refrescar la pantalla del monitor.
+
+    DDR4 RAM
+    Lanzada en 2014. Se reduce el voltaje hasta 1.05 y 1.2V, aunque muchos
+    módulos operan a 1.35V. La velocidad se ha visto notablemente incrementada,
+    pero su base comenzó en los 2133 MHz. Actualmente ya hay módulos de 32 GB,
+    aunque esto se va ampliando poco a poco
+
+    DDR5 RAM
+    Lanzada a mediados del 2020 llega a anchos de banda de hasta 6.4 Gbps en
+    sus modelos iniciales, es la primera memoria DDR de doble canal en un solo
+    chip. Su frecuencia base es de 4800 MHz y, además, su consumo baja por la
+    clásica reducción de voltaje, esta vez a 1.1 V. Su capacidad de
+    almacenamiento máxima en un módulo de memoria es de 128 GB.
+
+    Memoria secundaria: Magnetico, Optico, Solido.
+
+
+
+
+
+
+
+    Sistemas Operativos:
+    Un sistema operativo (en inglés más conocido a través de las siglas OS, operating system) es un conjunto de programas que permite manejar la memoria, disco, medios de almacenamiento de información y los diferentes periféricos o recursos de nuestra computadora.
+
+    ` Sistemas operativos
+    Usuario                 Gestión de tareas           Gestión de recursos
+    
+    Multiusuario            Multitarea                  Centralizado
+    Monousuario             Monotarea                   Distribuido
+
+
+    Según el usuario pueden ser:
+    Sistemas operativos: Multiusuario y Monousuario.
+    
+    Multiusuario: Sistema operativo que permite que varios usuarios ejecuten simultáneamente sus programas.
+
+    Monousuario: Sistema operativo que solamente permite ejecutar los programas de un usuario a la vez.
+    
+    Según la gestión de tareas puede ser: Multitarea y Monotarea.
+
+    Multitarea: Sistema operativo que
+    puede ejecutar varios
+    procesos al mismo tiempo.
+
+    Monotarea: Sistema operativo que
+    solamente permite ejecutar
+    un proceso a la vez.
+    
+
+    Según la gestión de recursos pueden ser: Centralizado y Distribuido.
+
+    Centralizado: Sistema operativo solo
+    permite utilizar los recursos
+    de un solo ordenador.
+
+    Distribuido: Sistema operativo que permite ejecutar los procesos de más de un ordenador al mismo tiempo.
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    Arquitectura Cliente-Servidor:
+
+    Servidor: Genéricamente un servidor es un ordenador, pero con prestaciones elevadas. Sin embargo, desde este enfoque, un servidor es un proceso que ofrece recursos y servicios a los clientes que lo solicitan (back end).
+
+    Según el tipo de servidor implantado, tendremos un tipo de arquitectura cliente-servidor diferente. A su vez, debido a que los programas y datos se encuentran centralizados, se facilita la integridad y el mantenimiento.
+
+    Middleware: Es la parte del software del sistema que se encarga del transporte de los mensajes entre el cliente y el servidor y facilita la interconexión de sistemas heterogéneos sin utilizar tecnologías propietarias. Por lo cual, se ejecuta en ambos lados de la estructura.
+
+    El middleware permite independizar a los clientes y a los servidores. Además, ofrece más control sobre el negocio, debido a que permite obtener información desde diferentes orígenes —uniendo tecnologías y arquitecturas distintas— y ofrecer de manera conjunta.
+
+    Otra característica es que los sistemas están débilmente acoplados ya que interactúan mediante el envío de mensajes.
+
+    Cliente: De manera genérica, nos referimos a una computadora, normalmente con prestaciones ajustadas, sin embargo, en entornos cliente-servidor, se utiliza el término front end, ya que es un proceso que solicita los servicios del servidor a través de una petición del usuario.
+
+    Un proceso cliente se encarga de interactuar con el usuario, por lo que estará construido con alguna herramienta que permita implementar interfaces gráficas (GUI).-->
+
+
+
+
+    Lenguajes de programación
+
+    Lenguajes de programacion:
+    lenguaje formales: lenguajes de programación.
+
+
+    Lenguajes especpificos y generales:
+    Especificos: resuelven problemas puntuales
+    Generales: permiten desarollar una infinidad de aplicaciones distintas.
+
+    Alto nivel: Aquellos que se encuentran mas cercanos al lenguaje natural que al lenguaje maquina. ejemplo: JavaScript.
+
+    Lenguajes de bajo nivel: indican instrucciones muy especificas y tienen una alta eficacia en los recursos disponibles. 
+
+
+    ¿qué es un paradigma de programación?
+    Es una manera o estilo de programación de software. Existen diferentes formas de diseñar un lenguaje de programación y varios modos de trabajar para obtener los resultados que necesitan los programadores. Se trata de un conjunto de métodos sistemáticos aplicables en todos los niveles del diseño de programas para resolver problemas computacionales.
+
+    ¿Que es un paradigma?
+    Un paradigma es una forma de pensar bajo un modelo preestablecido
+
+    Paradigma estructurado:
+    Sigue una línea de pensamiento donde se suele ejecutar una instrucción a la vez y uno se rige en un acotado set de instrucciones.
+    Este paradigma es muy utilizado para el desarrollo de sistemas. 
+
+
+
+    Paradigma de programación orientado a objetos:
+    El código puede agruparse de tal forma que llegue a representar una entidad y que interprete mensajes.  La fortaleza del paradigma de la programación orientada a objetos yace en utilizar abstracciones y crear entidades.
+
+
+    Paradigma Funcional:
+    El paradigma de programación funcional se basa en un concepto muy simple y es el de las funciones matemáticas. 
+
+
+    La fortaleza de este paradigma radica en que siempre que a la función X se le pasa el valor A, esta siempre va a devolver el valor B.
+
+    Esta propiedad de devolver el mismo valor se le conoce como inmutabilidad, y es característico de este paradigma.
+
+
+    Paradigma lógico:
+
+    En lugar de desarrollar pasos e instrucciones, utiliza reglas lógicas para consultar al sistema y el mismo infiere que hacer en base a las reglas lógicas establecidas.
+
+    Ejemplo:
+    Reglas lógicas: 
+
+    Toda persona cuyo saldo sea negativo es deudor.
+
+    A todo deudor se le aplica una tasa de interés del 10% 
+    El sistema responde analizando si Juan es una persona, si es deudor o no y si aplica o no la tasa de interés.
+
+
+
+
+    Paradigma de programación con lenguaje específico de dominio:
+    Los lenguajes que encontramos acá tratan de resolver problemáticas superespecíficas.
+    Por Ejemplo:
+    Cuando queremos consultar una base de datos de un supermercado para saber qué productos tenemos en la categoría de electrodomésticos.
+
+
+
+
+    Multiparadigma:
+
+    A lo largo de la evolución de la programación, con nuevos desafíos y paradigmas han habido lenguajes que han modificado su estructura para poder permitir dar soluciones en distintos paradigmas.
+
+    
+    
+    
+    Maquinas Virtuales:
+    software capaz de contener en su interior un Sistema operativo.
+
+    existen 2 tipos de maquinas virtuales: las de sistemas y las de procesos.
+
+    maquina virtual de sistemas: emula una computadora completa. (sosftware que nos permite ejecutar otro sistema operativo en su interior.) El lugar donde la maquina virtual es creada se llama Hipervisor: es una capa de software que se instala sobre la parte fisica de la computadora y su funcion es asignar parte de la memoria, parte del disco, cpu y otros recursos fisicos. Existen 2 tipos de hipervisor:
+    TIPO 1: (mas utilizado) por ser mas rapido y mas seguro y corre directamente sobre la parte fisica de la computadora y sobre el se crearan una o mas maquinas virtuales
+    Tipo 2: corre sobre un sistema operativo y es mas lento que el anterior
+
+
+    Maquina virtual de procesos: NO emula una computadora completa. si no solamente un proceso completo (ejemplo una aplicacion.) permitiendo que cada una se comporte de la misma manera independientemente del sistema operativo sobre el que se ejecute lo cual puede resultar de gran utilidad al momento de desarrollar aplicaciones que van a ejecutarse en distintos sistemas operativos.
+
+    Ventajas: usar diferentes distribuciones de linux u otros sistemas operativos.
+        Ejecutar aplicaciones desde otros S. O.
+        Mejora el aprovechamiento del hardware
+        Virtualizaciones del almacenamiento o redes.
+
+
+    Desventajas: menos eficientes a las maquinas reales.
+        Tiene que solicitar acceso al hardware ralentizando el proceso
+        Si se ejecutan muchas maquinas virtuales esta puede carecer de rendimiento si no tiene los recursos suficientes
+
+
+
+
+    Beneficios de virtualizacion
+    Eficiencia: Permite la actualización de software y hardware de las máquinas virtuales sin grandes impactos en la la productividad de los sistemas involucrados.
+
+    Tiempo de actividad:Tiene la capacidad de evitar tiempos de inactividad innecesarios aprovechando al máximo los recursos. Incluso los servicios de virtualización económicos pueden ofrecer un tiempo de actividad de casi el 99,9% de operacion.
+
+    Despliegue:La implementación de recursos es considerablemente más rápida cuando se usa la tecnología de virtualización. El tiempo dedicado a crear redes locales o configurar máquinas físicas se puede ahorrar significativamente. Por lo tanto, lo único que necesita es al menos un acceso único al entorno virtual. Además, la implementación de máquinas virtuales es más simple que la implementación de versiones físicas teniendo de antemano imágenes listas para desplegar.
+
+    Ahorro de energia:El uso de la virtualización significa literalmente que el sistema es más eficiente energéticamente ya que no se utiliza ningún hardware o software más allá del previsto para la virtualización.
+
+    Snapshots:Los mismos proporcionan un registro de cambios para el disco virtual y se utilizan para restaurar una máquina virtual a un punto en particular en el tiempo cuando ocurre una falla o error del sistema.
+
+    Backups y restauracion ante desastres:Se pueden realizar copias de seguridad del servidor virtual y en las máquinas virtuales se pueden migrar entre sí. El proceso de recuperación ante desastres es muy sencillo en un entorno virtualizado. Con solamente tener un “resguardo” de los archivos de configuración del hardware de la máquina “Guest” y la copia de los discos virtuales, es suficiente para rápidamente hacer un recupero del ambiente en su totalidad.
+
+    Alta disponibilidad: Muchos de los sistemas de virtualización permiten utilizar máquinas virtuales con la opción de HA (High Availability), esta funcionalidad asegura tener redundancia entre 2 o más ambientes. Nos garantiza que ante la falla de uno de los dos no exista una disrupción del servicio.
+
+    Costo: El uso de un sistema de virtualización es más económico debido a que no requiere ningún componente de hardware.
+
+
+
+    Modulo 4: surfeando en internet.
+
+    Los medios de transmisión son las vías o maneras en las que se envían datos entre diferentes dispositivos. Estas pueden ser tanto guiadas (cableadas) como no guiadas (inalámbricas).
+
+
+
+
+</body>
+</html>
+
+
+<!--
+Mas material a cerca de memoria RAM
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->

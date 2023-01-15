@@ -1,0 +1,14 @@
+* {
+
+}
+
+body {
+    background-color: aqua;
+}
+
+.tituloPrincipal {
+    width: 100vw;
+    text-align: center;
+    color: brown;
+    font-size: 70px;
+}
