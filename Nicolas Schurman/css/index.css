@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: grey;
+    padding: 12px 20px;
+    
+}
+
+.box {
+    background-color: white;
+    border-radius: 4px;
+    padding: 12px 20px;
+    box-shadow: 5px 4px 3px rgba(0,0,0,0.1);
+}
+
+.formulario {
+    padding: 20px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    margin: 8px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+textarea{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border:none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display:block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-btn {
+    background-color: #3e8e41;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}*/
+
+
+
+/*
+color
+text-align
+background-color
+border
+border-radius
+text-decoration
+padding
+margin
+text-transform(valro uppercase o lowercase)
+text-iindent (identar el texto)
+line-height
+letter-spacing
+text-shadow
+font-style
+font-family
+font-size
+font-weight
+list-style-type (circle, square)
+display
+position: relative, absolute, fixed
+overflow: visible, hidden (todo el contenido que no se alcance a mostrar dentro de la caja queda oculto), scroll (Agrega barras que permiten el scroll), auto(agrega el scroll en caso de que la caja lo necesite)
+selectores combinados: div p {}
+opacity
+cursor
+box-shadow (ver mas contenido a cerca de esta propiedad)
+text-shadow (sombra para el texto)
+
+menu tipo dropdown: (menu que desplega opciones al señalarlo)
+
+fondos con gradientes. (ver mas a cerca de este tipo de gradientes)
+
+background-image: linear-gradient(to bottom right, red, blue);
+
+
+transform nos permite tomar un elemento y moverlo, rotarlo, escalarlo y tambien acostarlo o torcerlo
+
+transform: rotate(-20deg)
+rotateX
+rotateY
+transform: translate(200px, 100px) (recibe 2 argumentos, el primero es cuanto yo quiero que se mueva en el eje x y el 2do es cuanto yo quiero que se mueva en el eje y)
+transform: scale(2, 3) (permite cambiar las dimensiones que va a tener nuestro elemento)
+scaleY(*valores*) (escala el eje y)
+scaleX(*valores*) (escala el eje x)
+
+
+transform: skewX(25deg) (retorcer, esta recibe un angulo)
+
+
+transition: width 0.3s; example
+
+
+
+
+
+
